@@ -14,7 +14,7 @@ class App extends React.PureComponent {
     return (
       <div className={`${classes.container} ${classes.container_vertical}`}>
         <Header />
-        <div className={`${classes.container} ${classes.container_horisontal}`}>
+        <div className={`${classes.container} ${classes.container_horizontal}`}>
           <Side />
           <Main />
         </div>

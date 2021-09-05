@@ -1,6 +1,6 @@
 export default {
   main: {
-    flexGrow: 5,
+    flexGrow: 8,
     padding: '15px',
   },
 };

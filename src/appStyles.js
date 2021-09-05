@@ -6,7 +6,7 @@ export default {
   container_vertical: {
     flexDirection: 'column',
   },
-  container_horisontal: {
+  container_horizontal: {
     flexDirection: 'row',
   },
 };
