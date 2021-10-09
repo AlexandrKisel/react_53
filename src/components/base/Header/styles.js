@@ -1,7 +1,7 @@
 export default {
   header: {
     padding: '15px',
-    backgroundColor: '#d952a3',
+    backgroundColor: '#3F7FBF',
     color: '#fff',
   },
   logo: {

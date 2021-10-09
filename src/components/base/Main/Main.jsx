@@ -1,8 +1,10 @@
+/* eslint-disable react/jsx-closing-bracket-location */
 import React from 'react';
 import jss from 'jss';
 import preset from 'jss-preset-default';
+import { Route } from 'react-router-dom';
 import styles from './styles';
-import KanbanBoard from './KanbanBoard';
+import routes from '../../../configs/routes';
 
 jss.setup(preset());
 const { classes } = jss.createStyleSheet(styles).attach();
@@ -10,8 +12,16 @@ const { classes } = jss.createStyleSheet(styles).attach();
 function Main() {
   return (
     <div className={classes.main}>
-      Main
-      <KanbanBoard />
+      {routes.map((item) => {
+        return (
+          <Route
+            key={item.title}
+            exact={!!item.exact}
+            path={item.url}
+            component={item.component}
+          />
+        );
+      })}
     </div>
   );
 }
